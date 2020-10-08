@@ -30,9 +30,52 @@
 <!-- i <body> har man alt indhold på siden som brugeren kan se -->
 <body>
     <nav class="container-fluid text-secondary py-1 sticky-top">
-        <i class="fas fa-bars"></i>
-        <i class="fab fa-apple"></i>
-        <i class="fas fa-shopping-bag"></i>
+        <div class="navbar navbar-expand-md p-0 float-left">
+            <button class="navbar-toggler border-0" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
+                    aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <i class="fas fa-bars text-secondary"></i>
+            </button>
+            <div class="collapse navbar-collapse font12 bg-dark" id="navbarNavDropdown">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link border-bottom" href="#">Mac<span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link border-bottom" href="#">iPad</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link border-bottom" href="#">iPhone</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link border-bottom" href="#">Watch</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link border-bottom" href="#">TV</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link border-bottom" href="#">Music</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Support</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <a href="index.html"><i class="fab fa-apple"></i></a>
+        <div class="float-right p-0">
+            <a class="nav-link p-0 m-0" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <i class="fas fa-shopping-bag"></i>
+            </a>
+            <div class="dropdown-menu w-100" aria-labelledby="navbarDropdown">
+                <p class="text-center text-muted font10 py-2">Your Bag is Empty.</p>
+                <p class="ml-1 mr-2 text-darkblue border-top py-1"><i class="fas fa-shopping-bag font12 mr-1"></i><a href="#" class="tdnone tdhover text-darkblue">Bag</a></p>
+                <p class="ml-1 mr-2 text-darkblue border-top py-1"><i class="fas fa-heart font12 mr-1"></i><a href="#" class="tdnone tdhover text-darkblue">Favorites</a></p>
+                <p class="ml-1 mr-2 text-darkblue border-top py-1"><i class="fas fa-box font12 mr-1"></i><a href="#" class="tdnone tdhover text-darkblue">Orders</a></p>
+                <p class="ml-1 mr-2 text-darkblue border-top py-1"><i class="fas fa-cog font12 mr-1"></i><a href="#" class="tdnone tdhover text-darkblue">Account</a></p>
+                <p class="ml-1 mr-2 text-darkblue border-top py-1"><i class="fas fa-user-circle font12 mr-1"></i><a href="#" class="tdnone tdhover text-darkblue">Sign In</a></p>
+
+            </div>
+        </div>
     </nav>
     <div class="container-fluid bg-darkblue py-1 px-5">
         <p class="text-white text-center">Evaluate COVID‑19 symptoms and understand next steps <span class="ml-1"><i class="fas fa-chevron-right"></i></span></p>
@@ -57,8 +100,8 @@
             <p class="h1 text-center d-none d-md-block"><strong>iPad Air</strong></p>
             <p class="text-center font13 mb-1">Powerful. Colorful. Wonderful.</p>
             <p class="text-blue text-center font13">
-                <a href="#" class="tdnone tdhover text-darkblue">Learn more</a><span class="ml-1 mr-2"><i class="fas fa-chevron-right font10"></i></span>
-                <a href="#" class="tdnone tdhover text-darkblue">View pricing</a><span class="ml-1"><i class="fas fa-chevron-right font10"></i></span>
+                <a href="#" class="tdnone tdhover text-darkblue">Learn more</a><span class="ml-1 mr-2 text-darkblue"><i class="fas fa-chevron-right font10"></i></span>
+                <a href="#" class="tdnone tdhover text-darkblue">View pricing</a><span class="ml-1 text-darkblue"><i class="fas fa-chevron-right font10"></i></span>
             </p>
         </div>
         <img src="images/ipad-tab.JPG" alt="iPad air" class="d-none mx-auto" width="260">
@@ -68,21 +111,342 @@
         <p class="text-danger text-center text-uppercase"><strong>se</strong></p>
         <p class="text-center font13 mb-1">Heavy on features. Light on price.</p>
         <p class="text-blue text-center font13">
-            <a href="#" class="tdnone tdhover text-darkblue">Learn more</a><span class="ml-1 mr-2"><i class="fas fa-chevron-right font10"></i></span>
-            <a href="#" class="tdnone tdhover text-darkblue">Buy</a><span class="ml-1"><i class="fas fa-chevron-right font10"></i></span>
+            <a href="#" class="tdnone tdhover text-darkblue">Learn more</a><span class="ml-1 mr-2 text-darkblue"><i class="fas fa-chevron-right font10"></i></span>
+            <a href="#" class="tdnone tdhover text-darkblue">Buy</a><span class="ml-1 text-darkblue"><i class="fas fa-chevron-right font10"></i></span>
         </p>
         <img src="images/watch-mob.PNG" alt="Apple watch" class="mx-auto pt-3 pb-4" width="260">
     </div>
     <div class="container-fluid bg-white mb-1">
         <div class="row">
-            <div class="col-12 col-md-6"></div>
-            <div class="col-12 col-md-6"></div>
-            <div class="col-12 col-md-6"></div>
-            <div class="col-12 col-md-6"></div>
-            <div class="col-12 col-md-6"></div>
-            <div class="col-12 col-md-6"></div>
+            <div class="col-12 mb-1 col-md-6 font12 text-center pt-3" id="grid1">
+                <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+                <span class="text-blue"><a href="#" class="tdnone tdhover text-blue">Learn more</a><i class="fas fa-chevron-right ml-1 font8"></i></span>
+            </div>
+            <div class="col-12 mb-1 col-md-6 font12 text-center pt-2" id="grid2">
+                <br><br><br><br><br>
+                <span class="text-darkblue"><a href="#" class="tdnone tdhover text-darkblue">Learn more</a><i class="fas fa-chevron-right ml-1 font8"></i></span>
+            </div>
+            <div class="col-12 mb-1 col-md-6 font12 text-center pt-2" id="grid3">
+                <br><br><br><br><br>
+                <span class="text-darkblue"><a href="#" class="tdnone tdhover text-darkblue">Learn more</a><i class="fas fa-chevron-right ml-1 font8"></i></span>
+            </div>
+            <div class="col-12 mb-1 col-md-6 font12 text-center pt-1" id="grid4">
+                <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+                <span class="text-blue"><a href="#" class="tdnone tdhover text-blue">Watch now</a><i class="fas fa-play-circle ml-1 font13"></i></span>
+            </div>
+            <div class="col-12 mb-1 col-md-6 font12 text-center pt-2" id="grid5">
+                <br><br><br><br><br>
+                <span class="text-darkblue"><a href="#" class="tdnone tdhover text-darkblue">Shop</a><i class="fas fa-chevron-right ml-1 font8"></i></span>
+            </div>
+            <div class="col-12 col-md-6 font12 text-center pt-2" id="grid6">
+                <br><br><br><br><br><br>
+                <span class="text-darkblue"><a href="#" class="tdnone tdhover text-darkblue">Listen now</a><i class="fas fa-chevron-right ml-1 font8"></i></span>
+            </div>
         </div>
     </div>
+    <footer class="container-fluid bg-secondary p-2">
+        <div class="text-muted font8 border-bottom">
+            <p class="mb-1">1. Apple Fitness+ is coming late 2020.</p>
+            <p class="mb-1">Apple TV+ is $4.99/month after free trial. One subscription per Family Sharing group. Offer good for 3 months after eligible device activation. Plan automatically renews until cancelled. Restrictions and other <a href="#" class="text-dark text-muted tdnone tdhover">terms</a> apply.</p>
+            <p class="mb-2">Apple Music is $9.99/month after free trial. Plan automatically renews until cancelled. <a href="#" class="text-dark text-muted tdnone tdhover">Terms</a> apply.</p>
+        </div>
+        <div>
+            <nav class="navbar navbar-expand-md bg-secondary border-bottom p-1">
+                <p class="font8 text-dark">Shop and Learn</p>
+                <button class="navbar-toggler border-0" type="button" data-toggle="collapse" data-target="#footer1"
+                        aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                    <i class="fas fa-plus text-dark font8"></i>
+                </button>
+                <div class="collapse navbar-collapse" id="footer1">
+                    <ul class="navbar-nav font8 text-muted">
+                        <li class="nav-item active">
+                            <a href="#" class="nav-link text-dark text-muted tdnone tdhover">Mac</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link text-dark text-muted tdnone tdhover">iPad</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link text-dark text-muted tdnone tdhover">iPhone</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link text-dark text-muted tdnone tdhover">Watch</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link text-dark text-muted tdnone tdhover">TV</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link text-dark text-muted tdnone tdhover">Music</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link text-dark text-muted tdnone tdhover">AirPods</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link text-dark text-muted tdnone tdhover">HomePod</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link text-dark text-muted tdnone tdhover">iPod touch</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link text-dark text-muted tdnone tdhover">Accessories</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link text-dark text-muted tdnone tdhover">Gift Cards</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+            <nav class="navbar navbar-expand-md bg-secondary border-bottom p-1">
+                <p class="font8 text-dark">Services</p>
+                <button class="navbar-toggler border-0" type="button" data-toggle="collapse" data-target="#footer2"
+                        aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                    <i class="fas fa-plus text-dark font8"></i>
+                </button>
+                <div class="collapse navbar-collapse" id="footer2">
+                    <ul class="navbar-nav font8 text-muted">
+                        <li class="nav-item active">
+                            <a href="#" class="nav-link text-dark text-muted tdnone tdhover">Apple Music</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link text-dark text-muted tdnone tdhover">Apple TV+</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link text-dark text-muted tdnone tdhover">Apple Fitness+</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link text-dark text-muted tdnone tdhover">Apple News+</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link text-dark text-muted tdnone tdhover">Apple Arcade</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link text-dark text-muted tdnone tdhover">iCloud</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link text-dark text-muted tdnone tdhover">Apple One</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link text-dark text-muted tdnone tdhover">Apple Card</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link text-dark text-muted tdnone tdhover">Apple Books</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link text-dark text-muted tdnone tdhover">App Store</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+            <nav class="navbar navbar-expand-md bg-secondary border-bottom p-1">
+                <p class="font8 text-dark">Account</p>
+                <button class="navbar-toggler border-0" type="button" data-toggle="collapse" data-target="#footer3"
+                        aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                    <i class="fas fa-plus text-dark font8"></i>
+                </button>
+                <div class="collapse navbar-collapse" id="footer3">
+                    <ul class="navbar-nav font8 text-muted">
+                        <li class="nav-item active">
+                            <a href="#" class="nav-link text-dark text-muted tdnone tdhover">Manage Your Apple ID</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link text-dark text-muted tdnone tdhover">Apple Store Account</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link text-dark text-muted tdnone tdhover">iCloud.com</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+            <nav class="navbar navbar-expand-md bg-secondary border-bottom p-1">
+                <p class="font8 text-dark">Apple Store</p>
+                <button class="navbar-toggler border-0" type="button" data-toggle="collapse" data-target="#footer4"
+                        aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                    <i class="fas fa-plus text-dark font8"></i>
+                </button>
+                <div class="collapse navbar-collapse" id="footer4">
+                    <ul class="navbar-nav font8 text-muted">
+                        <li class="nav-item active">
+                            <a href="#" class="nav-link text-dark text-muted tdnone tdhover">Find a Store</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link text-dark text-muted tdnone tdhover">Shop Online</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link text-dark text-muted tdnone tdhover">Genius Bar</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link text-dark text-muted tdnone tdhover">Today at Apple</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link text-dark text-muted tdnone tdhover">Apple Camp</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link text-dark text-muted tdnone tdhover">Apple Store App</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link text-dark text-muted tdnone tdhover">Refurbished and Clearance</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link text-dark text-muted tdnone tdhover">Financing</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link text-dark text-muted tdnone tdhover">Apple Trade In</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link text-dark text-muted tdnone tdhover">Order Status</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link text-dark text-muted tdnone tdhover">Shopping Help</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+            <nav class="navbar navbar-expand-md bg-secondary border-bottom p-1">
+                <p class="font8 text-dark">For Business</p>
+                <button class="navbar-toggler border-0" type="button" data-toggle="collapse" data-target="#footer5"
+                        aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                    <i class="fas fa-plus text-dark font8"></i>
+                </button>
+                <div class="collapse navbar-collapse" id="footer5">
+                    <ul class="navbar-nav font8 text-muted">
+                        <li class="nav-item active">
+                            <a href="#" class="nav-link text-dark text-muted tdnone tdhover">Apple and Business</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link text-dark text-muted tdnone tdhover">Shop for Business</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+            <nav class="navbar navbar-expand-md bg-secondary border-bottom p-1">
+                <p class="font8 text-dark">For Education</p>
+                <button class="navbar-toggler border-0" type="button" data-toggle="collapse" data-target="#footer6"
+                        aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                    <i class="fas fa-plus text-dark font8"></i>
+                </button>
+                <div class="collapse navbar-collapse" id="footer6">
+                    <ul class="navbar-nav font8 text-muted">
+                        <li class="nav-item active">
+                            <a href="#" class="nav-link text-dark text-muted tdnone tdhover">Apple and Education</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link text-dark text-muted tdnone tdhover">Shop for K-12</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link text-dark text-muted tdnone tdhover">Shop for College</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+            <nav class="navbar navbar-expand-md bg-secondary border-bottom p-1">
+                <p class="font8 text-dark">For Healthcare</p>
+                <button class="navbar-toggler border-0" type="button" data-toggle="collapse" data-target="#footer7"
+                        aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                    <i class="fas fa-plus text-dark font8"></i>
+                </button>
+                <div class="collapse navbar-collapse" id="footer7">
+                    <ul class="navbar-nav font8 text-muted">
+                        <li class="nav-item active">
+                            <a href="#" class="nav-link text-dark text-muted tdnone tdhover">Apple in Healthcare</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link text-dark text-muted tdnone tdhover">Health on Apple Watch</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link text-dark text-muted tdnone tdhover">Health Records on iPhone</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+            <nav class="navbar navbar-expand-md bg-secondary border-bottom p-1">
+                <p class="font8 text-dark">For Government</p>
+                <button class="navbar-toggler border-0" type="button" data-toggle="collapse" data-target="#footer8"
+                        aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                    <i class="fas fa-plus text-dark font8"></i>
+                </button>
+                <div class="collapse navbar-collapse" id="footer8">
+                    <ul class="navbar-nav font8 text-muted">
+                        <li class="nav-item active">
+                            <a href="#" class="nav-link text-dark text-muted tdnone tdhover">Shop for Government</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link text-dark text-muted tdnone tdhover">Shop for Veterans and Military</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+            <nav class="navbar navbar-expand-md bg-secondary border-bottom p-1">
+                <p class="font8 text-dark">Apple Values</p>
+                <button class="navbar-toggler border-0" type="button" data-toggle="collapse" data-target="#footer9"
+                        aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                    <i class="fas fa-plus text-dark font8"></i>
+                </button>
+                <div class="collapse navbar-collapse" id="footer9">
+                    <ul class="navbar-nav font8 text-muted">
+                        <li class="nav-item active">
+                            <a href="#" class="nav-link text-dark text-muted tdnone tdhover">Accessibility</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link text-dark text-muted tdnone tdhover">Education</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link text-dark text-muted tdnone tdhover">Environment</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link text-dark text-muted tdnone tdhover">Inclusion and Diversity</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link text-dark text-muted tdnone tdhover">Privacy</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link text-dark text-muted tdnone tdhover">Supplier Responsibility</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+            <nav class="navbar navbar-expand-md bg-secondary border-bottom p-1">
+                <p class="font8 text-dark">About Apple</p>
+                <button class="navbar-toggler border-0" type="button" data-toggle="collapse" data-target="#footer10"
+                        aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                    <i class="fas fa-plus text-dark font8"></i>
+                </button>
+                <div class="collapse navbar-collapse" id="footer10">
+                    <ul class="navbar-nav font8 text-muted">
+                        <li class="nav-item active">
+                            <a href="#" class="nav-link text-dark text-muted tdnone tdhover">Newsroom</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link text-dark text-muted tdnone tdhover">Apple Leadership</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link text-dark text-muted tdnone tdhover">Job Opportunities</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link text-dark text-muted tdnone tdhover">Investors</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link text-dark text-muted tdnone tdhover">Events</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link text-dark text-muted tdnone tdhover">Contact Apple</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+            <p class="mt-2 text-muted font8">More ways to shop: <a href="#" class="text-darkblue tdnone tdhover">Find an Apple Store</a> or <a href="#" class="text-darkblue tdnone tdhover">other retailer</a> near you. Or call 1-800-MY-APPLE.</p>
+        </div>
+        <div class="mt-2 font8">
+            <a href="#" class="text-dark tdnone tdhover">United States</a>
+            <p class="text-muted mt-2">Copyright © 2020 Apple Inc. All rights reserved.</p>
+            <div class="mt-1">
+                <a href="#" class="text-dark tdnone tdhover pr-1 border-right">Privacy Policy</a>
+                <a href="#" class="text-dark tdnone tdhover pr-1 border-right">Terms of Use</a>
+                <a href="#" class="text-dark tdnone tdhover pr-1 border-right">Sales and Refunds</a>
+                <a href="#" class="text-dark tdnone tdhover pr-1 border-right">Legal</a>
+                <a href="#" class="text-dark tdnone tdhover pr-1 border-right">Site Map</a>
+            </div>
+        </div>
+
+    </footer>
 
 
 
