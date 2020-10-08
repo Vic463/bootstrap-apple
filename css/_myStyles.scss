@@ -4,13 +4,15 @@
 
 * { /* Gælder alt på hele siden */
 	box-sizing: border-box; /* Bokse har altid den størrelse man giver uanset om der tilføjes margen, padding mv. */
-	font-family: 'Noto Sans KR', sans-serif;
 }
 
 /* Ovenstående kode kan give problemer ved nogle 3. parts scripts man henter. Men det gør det nemmere at forstå og lave kodning når man starter. */
 
 body {
 	margin: 0; /* Ingen kanter i siden af browser */
+	font-family: 'Noto Sans KR', sans-serif;
+	font-weight: 400;
+	font-size: 10pt;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -38,4 +40,13 @@ img {
 	display: block; /* Billeder er et element (laver linjeskift) */
 	max-width: 100%; /* Bredde må maks fylde 100% */
 	height: auto; /* Højden skal tilpasse sig */
+}
+.tdnone{text-decoration: none;}
+.tdhover:hover{text-decoration: underline;}
+.font18{font-size: 18pt;}
+.font13{font-size: 13pt;}
+.font8{font-size: 8pt;}
+nav{
+	font-size: 16pt;
+	background-color: rgba(29, 29, 29, 0.89);
 }
