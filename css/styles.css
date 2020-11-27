@@ -35,6 +35,7 @@
   --blue: #59a3fc;
   --darkblue: #0763fc;
   --brown: #b2420d;
+  --grey: #292929;
   --breakpoint-xs: 0;
   --breakpoint-sm: 576px;
   --breakpoint-md: 768px;
@@ -461,19 +462,19 @@ pre {
 
 @media (min-width: 576px) {
   .container, .container-sm {
-    max-width: 540px; } }
+    max-width: 980px; } }
 
 @media (min-width: 768px) {
   .container, .container-sm, .container-md {
-    max-width: 720px; } }
+    max-width: 980px; } }
 
 @media (min-width: 992px) {
   .container, .container-sm, .container-md, .container-lg {
-    max-width: 960px; } }
+    max-width: 980px; } }
 
 @media (min-width: 1200px) {
   .container, .container-sm, .container-md, .container-lg, .container-xl {
-    max-width: 1140px; } }
+    max-width: 980px; } }
 
 .row {
   display: flex;
@@ -1360,6 +1361,23 @@ pre {
   .table-hover .table-brown:hover > th {
     background-color: #e3bba8; }
 
+.table-grey,
+.table-grey > th,
+.table-grey > td {
+  background-color: #c3c3c3; }
+
+.table-grey th,
+.table-grey td,
+.table-grey thead th,
+.table-grey tbody + tbody {
+  border-color: #909090; }
+
+.table-hover .table-grey:hover {
+  background-color: #b6b6b6; }
+  .table-hover .table-grey:hover > td,
+  .table-hover .table-grey:hover > th {
+    background-color: #b6b6b6; }
+
 .table-active,
 .table-active > th,
 .table-active > td {
@@ -2114,6 +2132,32 @@ fieldset:disabled a.btn {
     .show > .btn-brown.dropdown-toggle:focus {
       box-shadow: 0 0 0 0.2rem rgba(190, 94, 49, 0.5); }
 
+.btn-grey {
+  color: #fff;
+  background-color: #292929;
+  border-color: #292929; }
+  .btn-grey:hover {
+    color: #fff;
+    background-color: #161616;
+    border-color: #101010; }
+  .btn-grey:focus, .btn-grey.focus {
+    color: #fff;
+    background-color: #161616;
+    border-color: #101010;
+    box-shadow: 0 0 0 0.2rem rgba(73, 73, 73, 0.5); }
+  .btn-grey.disabled, .btn-grey:disabled {
+    color: #fff;
+    background-color: #292929;
+    border-color: #292929; }
+  .btn-grey:not(:disabled):not(.disabled):active, .btn-grey:not(:disabled):not(.disabled).active,
+  .show > .btn-grey.dropdown-toggle {
+    color: #fff;
+    background-color: #101010;
+    border-color: #090909; }
+    .btn-grey:not(:disabled):not(.disabled):active:focus, .btn-grey:not(:disabled):not(.disabled).active:focus,
+    .show > .btn-grey.dropdown-toggle:focus {
+      box-shadow: 0 0 0 0.2rem rgba(73, 73, 73, 0.5); }
+
 .btn-outline-primary {
   color: #fbfbfd;
   border-color: #fbfbfd; }
@@ -2344,6 +2388,27 @@ fieldset:disabled a.btn {
     .btn-outline-brown:not(:disabled):not(.disabled):active:focus, .btn-outline-brown:not(:disabled):not(.disabled).active:focus,
     .show > .btn-outline-brown.dropdown-toggle:focus {
       box-shadow: 0 0 0 0.2rem rgba(178, 66, 13, 0.5); }
+
+.btn-outline-grey {
+  color: #292929;
+  border-color: #292929; }
+  .btn-outline-grey:hover {
+    color: #fff;
+    background-color: #292929;
+    border-color: #292929; }
+  .btn-outline-grey:focus, .btn-outline-grey.focus {
+    box-shadow: 0 0 0 0.2rem rgba(41, 41, 41, 0.5); }
+  .btn-outline-grey.disabled, .btn-outline-grey:disabled {
+    color: #292929;
+    background-color: transparent; }
+  .btn-outline-grey:not(:disabled):not(.disabled):active, .btn-outline-grey:not(:disabled):not(.disabled).active,
+  .show > .btn-outline-grey.dropdown-toggle {
+    color: #fff;
+    background-color: #292929;
+    border-color: #292929; }
+    .btn-outline-grey:not(:disabled):not(.disabled):active:focus, .btn-outline-grey:not(:disabled):not(.disabled).active:focus,
+    .show > .btn-outline-grey.dropdown-toggle:focus {
+      box-shadow: 0 0 0 0.2rem rgba(41, 41, 41, 0.5); }
 
 .btn-link {
   font-weight: 400;
@@ -3900,6 +3965,16 @@ input[type="button"].btn-block {
     outline: 0;
     box-shadow: 0 0 0 0.2rem rgba(178, 66, 13, 0.5); }
 
+.badge-grey {
+  color: #fff;
+  background-color: #292929; }
+  a.badge-grey:hover, a.badge-grey:focus {
+    color: #fff;
+    background-color: #101010; }
+  a.badge-grey:focus, a.badge-grey.focus {
+    outline: 0;
+    box-shadow: 0 0 0 0.2rem rgba(41, 41, 41, 0.5); }
+
 .jumbotron {
   padding: 2rem 1rem;
   margin-bottom: 2rem;
@@ -4034,6 +4109,15 @@ input[type="button"].btn-block {
     border-top-color: #e3bba8; }
   .alert-brown .alert-link {
     color: #2e1103; }
+
+.alert-grey {
+  color: #151515;
+  background-color: #d4d4d4;
+  border-color: #c3c3c3; }
+  .alert-grey hr {
+    border-top-color: #b6b6b6; }
+  .alert-grey .alert-link {
+    color: black; }
 
 @keyframes progress-bar-stripes {
   from {
@@ -4344,6 +4428,17 @@ input[type="button"].btn-block {
     color: #fff;
     background-color: #5d2207;
     border-color: #5d2207; }
+
+.list-group-item-grey {
+  color: #151515;
+  background-color: #c3c3c3; }
+  .list-group-item-grey.list-group-item-action:hover, .list-group-item-grey.list-group-item-action:focus {
+    color: #151515;
+    background-color: #b6b6b6; }
+  .list-group-item-grey.list-group-item-action.active {
+    color: #fff;
+    background-color: #151515;
+    border-color: #151515; }
 
 .close {
   float: right;
@@ -5055,6 +5150,14 @@ button.bg-brown:hover,
 button.bg-brown:focus {
   background-color: #82300a !important; }
 
+.bg-grey {
+  background-color: #292929 !important; }
+
+a.bg-grey:hover, a.bg-grey:focus,
+button.bg-grey:hover,
+button.bg-grey:focus {
+  background-color: #101010 !important; }
+
 .bg-white {
   background-color: #fff !important; }
 
@@ -5123,6 +5226,9 @@ button.bg-brown:focus {
 
 .border-brown {
   border-color: #b2420d !important; }
+
+.border-grey {
+  border-color: #292929 !important; }
 
 .border-white {
   border-color: #fff !important; }
@@ -7402,6 +7508,12 @@ a.text-darkblue:hover, a.text-darkblue:focus {
 a.text-brown:hover, a.text-brown:focus {
   color: #6b2808 !important; }
 
+.text-grey {
+  color: #292929 !important; }
+
+a.text-grey:hover, a.text-grey:focus {
+  color: #030303 !important; }
+
 .text-body {
   color: #212529 !important; }
 
@@ -7630,6 +7742,10 @@ nav:first-of-type {
 /* Her henter vi vores tablet version _tablet.scss */
 /* Her har vi styles til vores tablet version */
 /* ------------------------------------------------------------- */
+@media screen and (min-width: 768px) {
+  #kurv {
+    max-width: 286px; } }
+
 /* Her henter vi vores computer version _tablet.scss */
 /* Her har vi styles til vores computer version */
 /* ------------------------------------------------------------- */
